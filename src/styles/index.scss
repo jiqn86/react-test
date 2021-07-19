@@ -1,0 +1,36 @@
+@import './_config';
+@import '../components/DetailsPage/DetailsPage.scss';
+@import '../components/Home/Home.scss';
+@import '../components/ListPage/ListPage.scss';
+@import '../components/Movies/Movies.scss';
+@import '../components/Navigation/Navigation.scss';
+@import '../components/FilterAndSortMovies/FilterAndSortMovies.scss';
+@import '../components/AddDVDModal/AddDVDModal.scss';
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar {
+  padding-left: 55px;
+}
+
+h3, h6 {
+  color: $yellow-hover;
+}
+
+.showOnTop {
+  z-index: 2;
+}

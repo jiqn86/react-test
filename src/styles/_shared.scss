@@ -1,0 +1,28 @@
+@mixin btn-style {
+  border: 1px solid #fff;
+  padding: 5px 25px 5px 20px;
+  color: $grayed-color;
+  background: #fff;
+  border-radius: 25px;
+}
+
+@mixin movie-style {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  height: 75vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@mixin name-display {
+  width: 62%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 20px;
+}
+
+@mixin box-shadow {
+  box-shadow: 1px 1px 1px 1px $dark-blue;
+}

@@ -1,0 +1,78 @@
+@import '../../styles/_shared';
+
+.list-page-options {
+  width: 100vw;
+  margin-bottom: 15px;
+
+  .status-actions {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      @include btn-style;
+    }
+
+    .selectors {
+      width: 22%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .selector-btn {
+      button {
+        @include btn-style;
+
+        background: $medium-blue;
+        color: #fff;
+        border: 1px solid $medium-blue;
+      }
+    }
+  }
+
+  .status-no-actions {
+    display: flex;
+    justify-content: flex-end;
+
+    div {
+      .btn-group {
+        button {
+          @include btn-style;
+        }
+      }
+
+      &:first-child {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.movies-list {
+  @include movie-style;
+
+  .movie-card {
+    height: 44vh;
+    background: #fff;
+
+    @include box-shadow;
+
+    img {
+      height: 40vh;
+    }
+
+    .movie-control {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px 0 10px;
+
+      h1 {
+        @include name-display;
+      }
+
+      .deleteBtn {
+        height: 35px;
+        float: right;
+      }
+    }
+  }
+}

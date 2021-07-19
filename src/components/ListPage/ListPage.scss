@@ -1,0 +1,16 @@
+.list-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .list-page-header {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.8em 0 0.8em 0;
+    padding: 15px 0 0 15px;
+    border-top: 2px solid $yellow-hover;
+    border-bottom: 2px solid $yellow-hover;
+  }
+}

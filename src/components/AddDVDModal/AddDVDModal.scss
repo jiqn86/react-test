@@ -1,0 +1,30 @@
+
+.modal-content {
+  .modal-header {
+    background-color: rgb(26, 26, 26);
+    color: hsl(60, 100%, 50%);
+
+    button {
+      border: none;
+      background: rgba(0, 0, 0, 0.112);
+      color: #fff;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      margin-bottom: 25px;
+    }
+  }
+
+  .modal-footer {
+    background-color: rgb(26, 26, 26);
+
+    .btnRemove {
+      background: #dc3545;
+    }
+  }
+}

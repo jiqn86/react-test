@@ -1,0 +1,108 @@
+@import '../../styles/_shared';
+
+.movie-card {
+  border: 1px solid #000000a7;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    margin: 1rem 1.2rem 0 0;
+    padding: 5px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+
+  a {
+    color: #2d2c2c;
+    text-decoration: none;
+  }
+}
+
+.carousel {
+  margin: 0 auto;
+  height: 89vh;
+
+  .carousel-inner {
+    .carousel-item {
+      img {
+        width: inherit;
+        height: 88vh;
+        object-fit: fill;
+      }
+
+      .carousel-options {
+        a {
+          color: #fff;
+          text-decoration: none;
+          text-transform: uppercase;
+          position: absolute;
+          top: 75vh;
+          left: 35px;
+          border: 1px solid transparent;
+          display: block;
+          border-radius: 10px;
+          padding: $padding-vertical $padding-horizontal;
+          background: linear-gradient(90deg, rgba(2, 123, 255, 1) 24%, rgba(110, 51, 244, 1) 63%);
+        }
+
+        .carousel-caption {
+          left: 3%;
+          bottom: 10%;
+          text-align: left;
+
+          h3 {
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Raleway', sans-serif;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.featured-items {
+  margin-top: 25px;
+
+  .featured-movie {
+    @include movie-style;
+
+    .movie-card {
+      width: 17rem;
+      height: 44vh;
+      background: #fff;
+
+      @include box-shadow;
+
+      img {
+        height: 40vh;
+      }
+
+      .movie-control {
+        margin-top: 5px;
+
+        h1 {
+          font-size: 22px;
+          margin-left: 10px;
+
+          @include name-display;
+        }
+      }
+    }
+  }
+}

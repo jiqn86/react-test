@@ -1,0 +1,25 @@
+nav {
+  padding: 0.5rem 0 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+
+  .navbar-brand {
+    color: $yellow-hover;
+  }
+
+  a {
+    margin-left: 15px;
+  }
+
+  .nav-links {
+    display: flex;
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $yellow-hover;
+      }
+    }
+  }
+}

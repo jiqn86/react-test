@@ -1,0 +1,32 @@
+.movie-detail {
+  border: 1px solid #000000b3;
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 25rem;
+
+  .movie-detail-info {
+    margin-bottom: 10px;
+
+    img {
+      width: 25rem;
+      height: 70vh;
+      object-fit: cover;
+    }
+
+    h1 {
+      text-align: center;
+      color: $yellow-hover;
+    }
+
+    span {
+      background: #302f2f;
+      padding: 5px;
+      border-radius: 6px;
+      color: #fff;
+      text-transform: uppercase;
+      opacity: 0.7;
+      position: relative;
+      left: 20rem;
+    }
+  }
+}
